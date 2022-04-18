@@ -228,15 +228,6 @@ def student_bulkupload_template(request):
     else:
         return HttpResponse("File not found")
 
-# @api_view(['POST'])
-# def student_bulkupload(request):
-#     for k,v in  request.FILES.items():
-#         print(v)
-#     data=request.FILES['file'].save_to_database(
-#                 model=Student,
-#                 mapdict=['first_name','last_name'])
-#     return JsonResponse(commonresponse.Response.sendsuccessResponse(None,data,"Success"),safe=False)
-
 @api_view(['POST'])
 def student_bulkupload(request):
     valid_extensions =  ['.xlsx', '.xls']  
