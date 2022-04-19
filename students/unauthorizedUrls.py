@@ -6,5 +6,4 @@ urls={
     uri+"/student_details/Excel_download":False,
     uri+"/student_details/student_bulkupload_template":False,
     uri+"/student_details/student_bulkupload":False,
-    uri+"/student_details/read_excel":False,
 }

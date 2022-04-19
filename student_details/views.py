@@ -251,6 +251,7 @@ def read_excel(request):
         if filename.endswith('.csv'):
             table_list.append(pd.read_csv(filename,sep="|",on_bad_lines='skip'))
             new_table_list.append(filename.split(".")[0])
+    print(new_table_list)
     for i in new_table_list[0]:
         if i.isnumeric():
             date+=i

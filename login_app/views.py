@@ -69,6 +69,7 @@ def decode_and_take_username(request):
 
 @api_view(['POST'])
 def login_auth(request):
+    print(request)
     user_name = request.data["username"]
     print(user_name)
     password= request.data["password"]

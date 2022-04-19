@@ -15,4 +15,5 @@ al_super_user={
     uri+"/student_details/range_sql":False,
     uri+"/login/create_user":False,
     uri+"/login/hash_password":False,
+    uri+"/student_details/read_excel":False,
 }
